@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <h1>Weather App</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form class="d-flex justify-content-center align-items-center w-100" role="search" onsubmit="getWeatherinformationBasedonCity(event)">
+                <input class="form-control form-control-lg me-2" type="search" placeholder="Search the city"
+                    aria-label="Search" style="width: 70%; height: 6rem; font-size: 1.8rem; font-weight: 600;"
+                    id="searchInput">
+                <button class="btn btn-success" style="width: 30%; height: 6rem">
+                    <h3>Search</h3>
+                </button>
+            </form>
+            <article>
+                <div class="card">
+                    <img class="card-img-top" alt="weather Information" id="image-Element">
+                    <div class="card-body">
+                        <h2 class="card-title" id="weather-Temperature"></h2>
+                        <h3 class="card-text" id="weather-Info"></h3>
+                        <h4 id="location-Name"></h4>
+                        <p class="card-text" id="card-Humidity-information"></p>
+                        <p class="card-text" id="card-Wind-information"></p>
+                        <p class="card-text" id="card-Pressure-information"></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="weather.js"></script>
+</body>
+
+</html>
