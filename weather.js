@@ -14,7 +14,7 @@ async function getWeatherinformation() {
         const latitude = locationCoordinates.coords.latitude;
         const longitude = locationCoordinates.coords.longitude;
 
-        const fetchWeatherinformation = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=487982cd3e6cb89608a90058e36bb7e4&units=metric`)
+        const fetchWeatherinformation = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=&units=metric`)
         const responseInformation = await fetchWeatherinformation.json();
         const temperature = responseInformation.main.temp.toFixed(0);
         const temperatureInformation = responseInformation.weather[0].main;
@@ -39,7 +39,7 @@ async function getWeatherinformationBasedonCity(event) {
     event.preventDefault();
     try {
         const cityName = searchElement.value;
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=487982cd3e6cb89608a90058e36bb7e4&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=&units=metric`);
         const apiCallresponse = await response.json();
         console.log(apiCallresponse);
         const cityLocationname = apiCallresponse.name;
