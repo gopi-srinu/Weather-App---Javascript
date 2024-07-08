@@ -1,16 +1,37 @@
-Weather App
 
-Overview
-The Weather App is a web application that provides real-time weather information based on the user's current location or a searched city. The application uses the OpenWeatherMap API to fetch and display weather data such as temperature, weather conditions, wind speed, humidity, and pressure.
+# Weather App
 
-Features
-1. Current Location Weather: Automatically fetches and displays weather information based on the user's current location.
-2. City Search: Allows users to search for weather information in any city.
-3. Responsive Design: The app is fully responsive and works well on different screen sizes, including desktops, tablets, and mobile devices.
+The Weather app gives weather information based on the user's current location or searched city. The program uses the Openweathermap API to retrieve weather data such as current temperature, humidity, and pressure.
 
-Technologies Used
-1. HTML
-2. CSS
-3. JavaScript
-4. Bootstrap
-5. OpenWeatherMap API
+## Features
+
+- Current Location Weather: Retrieves weather information depending on the user's current location and uses the OpenweatherMap API.
+- Search City: Users can look up weather information for a specific city.
+- Responsive Design: The application is entirely responsive and supports a variety of screen resolutions.
+
+## Installation
+
+Clone the repository
+
+```bash
+  git clone https://github.com/gopi-srinu/Weather-App-Javascript.git
+```
+Navigate to the project directory
+```bash
+  cd Weather-App-Javascript
+```
+Run the Application
+```bash
+  Open the weather.html with Live server or preferred browser.
+```
+
+## Usage
+- Enter a city name into the search bar and click the "Search" button to retrieve and display the weather information via the OpenWeatherMap API.
+
+
+## Tech Stack
+
+**Client:** HTML5, CSS3, JAVASCRIPT
+
+**Server:** OpenWeatherMap API
+
